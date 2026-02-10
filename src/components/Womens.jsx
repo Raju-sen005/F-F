@@ -76,7 +76,7 @@ function Womens() {
         }
     };
     return (
-        <section className="bg-orange-200 py-16 max-w-7xl mx-auto px-4">
+        <section className=" py-16 max-w-7xl mx-auto px-4">
             {/* Title */}
             <h2 className="text-center text-2xl md:text-3xl font-semibold mb-12">
                 Women's Collection

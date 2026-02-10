@@ -4,6 +4,10 @@ import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home.jsx'
 import Products from './pages/Products.jsx'
 import ProductDetail from './pages/ProductDetail.jsx'
+import CheckOut from './pages/CheckOut.jsx'
+import NewArrivals from './pages/NewArrivals.jsx'
+import Cart from './pages/Cart.jsx'
+import Customer from './pages/Customer.jsx'
 
 function App() {
 
@@ -18,6 +22,10 @@ function App() {
         <Route path="/women" element={<Products/>}/> 
         <Route path="/footwear" element={<Products/>}/> 
         <Route path="/product/:id" element={<ProductDetail />} />
+        <Route path="/checkout" element={<CheckOut />} />
+        <Route path="/new-arrivals" element={<NewArrivals/>}/> 
+        <Route path="/cart" element={<Cart/>}/> 
+        <Route path="/customer" element={<Customer/>}/> 
       </Routes>
     </>
   )

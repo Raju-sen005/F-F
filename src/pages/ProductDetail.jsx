@@ -4,7 +4,9 @@ import ProductDetailsAccordion from "../components/ProductDetailsAccordion.jsx";
 import SellerInfoAccordion from "../components/SellerInfoAccordion.jsx";
 import { Link } from "react-router-dom";
 // import { Heart, Star } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 function ProductDetail() {
+    const navigate = useNavigate();
     const images = [
         "https://i.pinimg.com/1200x/59/c4/4a/59c44a20a41bddcc1fe825e6e4aebbbd.jpg",
         "https://images.unsplash.com/photo-1483985988355-763728e1935b",
@@ -39,7 +41,7 @@ function ProductDetail() {
             title: "Casual Sneakers",
             price: "₹2,799",
             rating: 4.2,
-            image: "https://images.unsplash.com/photo-1528701800489-20be97f7a76a",
+            image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
         },
         {
             id: 103,
@@ -67,7 +69,7 @@ function ProductDetail() {
     };
 
     const buyNow = () => {
-        alert("Proceeding to checkout 🚀");
+        navigate('/checkout'); 
     };
 
     return (
@@ -87,7 +89,7 @@ function ProductDetail() {
                                     src={img}
                                     alt=""
                                     onClick={() => setMainImage(img)}
-                                    className={`w-20 h-20 object-cover rounded-lg border cursor-pointer
+                                    className={`w-20 h-20 object-cover rounded-lg border border-gray-300 cursor-pointer
                     ${mainImage === img ? "border-black" : "border-gray-200"}`}
                                 />
                             ))}
