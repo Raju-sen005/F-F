@@ -98,17 +98,17 @@ function Womens() {
                 {/* Slider */}
                 <div className="overflow-hidden">
                     <div
-                        className="flex gap-6 transition-transform duration-500 ease-in-out"
+                        className="flex gap-6 transition-transform duration-500 ease-in-out py-5"
                         style={{ transform: `translateX(-${index * CARD_WIDTH}px)` }}
                     >
                         {womens.map((item) => (
                             <div
                                 key={item.id}
                                 className="min-w-[260px] bg-white rounded-xl 
-                           shadow-sm hover:shadow-lg transition"
+                           shadow-sm hover:shadow-sm transition"
                             >
                                 {/* Image */}
-                                <div className="relative h-60 overflow-hidden rounded-xl">
+                                <div className="relative h-60 overflow-hidden rounded-t-xl">
                                     <img
                                         src={item.image}
                                         alt={item.name}

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home.jsx'
@@ -8,6 +7,7 @@ import CheckOut from './pages/CheckOut.jsx'
 import NewArrivals from './pages/NewArrivals.jsx'
 import Cart from './pages/Cart.jsx'
 import Customer from './pages/Customer.jsx'
+import BrandsProducts from './pages/BrandsProducts.jsx'
 
 function App() {
 
@@ -26,6 +26,7 @@ function App() {
         <Route path="/new-arrivals" element={<NewArrivals/>}/> 
         <Route path="/cart" element={<Cart/>}/> 
         <Route path="/customer" element={<Customer/>}/> 
+        <Route path="/brands/:id" element={<BrandsProducts/>}/> 
       </Routes>
     </>
   )

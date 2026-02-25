@@ -1,1 +1,68 @@
 @import "tailwindcss";
+.brand-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.brand-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+.brand-track.reverse {
+  animation: scrollReverse 25s linear infinite;
+}
+
+.brand-slider:hover .brand-track {
+  animation-play-state: paused;
+}
+
+.brand-card {
+  width: 200px;
+  height: 100px;
+  background: white;
+  border: 1px solid #f1f1f1;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.brand-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.brand-card img {
+  max-height: 40px;
+  object-fit: contain;
+  opacity: 0.7;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.brand-card:hover img {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scrollReverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+

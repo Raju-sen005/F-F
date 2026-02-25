@@ -1,6 +1,6 @@
 import { Heart, Star } from "lucide-react";
 import { Link } from "react-router-dom";
-
+import Navbar from "../components/Navbar";
 function NewArrivals() {
   const products = [
     {
@@ -34,6 +34,8 @@ function NewArrivals() {
   ];
 
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-[#f8f9fb] py-14 px-4">
       <div className="max-w-7xl mx-auto">
 
@@ -120,6 +122,7 @@ function NewArrivals() {
 
       </div>
     </div>
+    </>
   );
 }
 

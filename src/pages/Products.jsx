@@ -117,17 +117,17 @@ function Products() {
                         <Link
                             key={item.id}
                             to={`/product/${item.id}`}   // 👈 dynamic product detail
-                            className="min-w-[260px] bg-white rounded-xl border border-gray-100
+                            className="min-w-[260px] bg-white rounded-xl
                shadow-sm transition hover:shadow-sm block"
                         >
                             <div
                                 key={item.id}
                                 className="min-w-[260px] bg-white rounded-xl border border-gray-100
-                           shadow-sm  transition"
+                            transition"
 
                             >
                                 {/* Image */}
-                                <div className="relative h-60 overflow-hidden rounded-xl">
+                                <div className="relative h-60 overflow-hidden rounded-t-xl">
                                     <img
                                         src={item.image}
                                         alt={item.title}
