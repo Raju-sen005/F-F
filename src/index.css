@@ -66,3 +66,15 @@
   }
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url("./assets/Roboto/Roboto-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}

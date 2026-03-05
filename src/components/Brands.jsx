@@ -5,13 +5,13 @@ function Brands() {
   const brands = [
     { id: 1, name: "Nike", logo: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Logo_NIKE.svg" },
     { id: 2, name: "Adidas", logo: "https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" },
-    { id: 3, name: "Puma", logo: "https://upload.wikimedia.org/wikipedia/en/f/fd/Puma_AG.svg" },
-    { id: 4, name: "Levi's", logo: "https://upload.wikimedia.org/wikipedia/commons/0/03/Levi%27s_logo.svg" },
+    { id: 3, name: "Puma", logo: "https://1000logos.net/wp-content/uploads/2021/04/Puma-logo-768x383.png" },
+    { id: 4, name: "Levi's", logo: "https://1000logos.net/wp-content/uploads/2017/03/Levis-Logo-768x384.png" },
     { id: 5, name: "Zara", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fd/Zara_Logo.svg" },
     { id: 6, name: "H&M", logo: "https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" },
   ];
 
-  const row1 = [...brands, ...brands];
+  // const row1 = [...brands, ...brands];
   const row2 = [...brands.slice().reverse(), ...brands.slice().reverse()];
 
   return (
@@ -31,7 +31,7 @@ function Brands() {
         <div className="space-y-6">
 
           {/* Row 1 */}
-          <div className="brand-slider">
+          {/* <div className="brand-slider">
             <div className="brand-track">
               {row1.map((brand, index) => (
                 <Link to={`/brands/${brand.id}`} key={`r1-${index}`}>
@@ -41,7 +41,7 @@ function Brands() {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Row 2 */}
           <div className="brand-slider">

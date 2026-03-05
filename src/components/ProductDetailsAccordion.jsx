@@ -33,7 +33,7 @@ function ProductDetailsAccordion({ details }) {
                                     key={index}
                                     className="border-b last:border-b-0"
                                 >
-                                    <th className="w-1/3 bg-gray-50 px-4 py-3 text-left font-medium text-gray-700">
+                                    <th className="w-1/3 px-4 py-3 text-left font-medium text-gray-700">
                                         {item.label}
                                     </th>
                                     <td className="px-4 py-3 text-gray-600">

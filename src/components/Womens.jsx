@@ -9,42 +9,42 @@ import {
 
 function Womens() {
     const womens = [
-        {
-            id: 1,
-            name: "Premium Jacket",
-            price: "₹2,999",
-            rating: 4.5,
-            image: "https://i.pinimg.com/1200x/59/c4/4a/59c44a20a41bddcc1fe825e6e4aebbbd.jpg",
-        },
-        {
-            id: 2,
-            name: "Running Shoes",
-            price: "₹3,499",
-            rating: 4.2,
-            image: "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
-        },
-        {
-            id: 3,
-            name: "Leather Bag",
-            price: "₹1,999",
-            rating: 4.6,
-            image: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f",
-        },
-        {
-            id: 4,
-            name: "Casual Shirt",
-            price: "₹1,299",
-            rating: 4.1,
-            image: "https://images.unsplash.com/photo-1483985988355-763728e1935b",
-        },
-        {
-            id: 5,
-            name: "Smart Watch",
-            price: "₹4,999",
-            rating: 4.8,
-            image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
-        },
-    ];
+  {
+    id: 1,
+    name: "Women Denim Jacket",
+    price: "₹2,799",
+    rating: 4.5,
+    image: "https://images.unsplash.com/photo-1541101767792-f9b2b1c4f127",
+  },
+  {
+    id: 2,
+    name: "Women Summer Dress",
+    price: "₹1,999",
+    rating: 4.4,
+    image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446",
+  },
+  {
+    id: 3,
+    name: "Women Handbag",
+    price: "₹1,499",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3",
+  },
+  {
+    id: 4,
+    name: "Women Casual Top",
+    price: "₹999",
+    rating: 4.2,
+    image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d",
+  },
+  {
+    id: 5,
+    name: "Women High Heels",
+    price: "₹2,299",
+    rating: 4.7,
+    image: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2",
+  },
+];
 
     const CARD_WIDTH = 270;
     const [index, setIndex] = useState(0);
@@ -88,7 +88,7 @@ function Womens() {
                     onClick={prev}
                     disabled={index === 0}
                     className="absolute left-0 top-1/2 -translate-y-1/2 z-10
-                     bg-white border  rounded-full p-2 shadow-sm
+                     bg-white border border-gray-200 rounded-full p-2 shadow-sm
                       transition
                      disabled:opacity-30 disabled:hover:bg-white"
                 >
@@ -119,7 +119,7 @@ function Womens() {
 
                                     {/* Wishlist */}
                                     <button
-                                        className="absolute top-3 right-3 bg-white/90 backdrop-blur
+                                        className="absolute top-3 right-3 bg-white backdrop-blur
                                p-2 rounded-full shadow-sm
                                hover:text-red-500 transition"
                                     >
@@ -159,7 +159,7 @@ function Womens() {
                     onClick={next}
                     disabled={index >= womens.length - visibleItems}
                     className="absolute right-0 top-1/2 -translate-y-1/2 z-10
-                     bg-white border rounded-full p-2 shadow-sm
+                     bg-white border border-gray-200 rounded-full p-2 shadow-sm
                       transition
                      disabled:opacity-30 disabled:hover:bg-white"
                 >
