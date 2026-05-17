@@ -179,7 +179,7 @@ function Cart() {
                 <Link
                   to="/checkout"
                   className="block mt-8 text-center py-3
-                             bg-black text-white rounded-xl
+                             bg-blue-500 text-white rounded-xl
                              hover:opacity-90 transition"
                 >
                   Proceed to Checkout

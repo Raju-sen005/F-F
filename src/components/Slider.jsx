@@ -39,7 +39,7 @@ function Slider() {
   };
 
   return (
-    <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-[70vh] overflow-hidden">
+    <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-[54vh] overflow-hidden">
 
       {/* Slides */}
       {slides.map((slide, index) => (

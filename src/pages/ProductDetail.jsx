@@ -170,14 +170,14 @@ ${mainImage === img ? "border-black" : "border-gray-200"}`}
               <div className="flex gap-4 mt-8">
                 <button
                   onClick={addToCart}
-                  className="flex-1 py-3 border rounded-lg hover:bg-[#d89c3c] hover:text-white transition"
+                  className="flex-1 py-3 border border-gray-300 rounded-lg hover:bg-[#d89c3c] hover:text-white transition"
                 >
                   Add to Cart
                 </button>
 
                 <button
                   onClick={buyNow}
-                  className="flex-1 py-3 bg-black border border-black hover:bg-white hover:text-black  text-white rounded-lg transition"
+                  className="flex-1 py-3 bg-blue-500 border border-gray-300   text-white rounded-lg transition"
                 >
                   Buy Now
                 </button>
@@ -195,8 +195,8 @@ ${mainImage === img ? "border-black" : "border-gray-200"}`}
             <ProductDetailsAccordion details={details} />
 
             {/* Reviews */}
-            <div>
-              <h2 className="text-xl font-semibold mb-3">Customer Reviews</h2>
+            <div style={{ className: "padding: 0px 20px;" }}>
+              <h2 className="text-lg font-semibold mb-3">Customer Reviews</h2>
 
               <div className="space-y-0">
                 <div className="border-b  p-4 ">

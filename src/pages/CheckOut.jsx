@@ -124,7 +124,7 @@ function CheckOut() {
 
               <button
                 onClick={nextStep}
-                className="mt-8 px-8 py-3 bg-black text-white rounded-lg hover:opacity-90"
+                className="mt-8 px-8 py-3 bg-blue-500 text-white rounded-lg hover:opacity-90"
               >
                 Continue →
               </button>
@@ -177,7 +177,7 @@ function CheckOut() {
 
                 <button
                   onClick={nextStep}
-                  className="px-8 py-3 bg-black text-white rounded-lg"
+                  className="px-8 py-3 bg-blue-500 text-white rounded-lg"
                 >
                   Continue →
                 </button>
@@ -251,7 +251,7 @@ function CheckOut() {
 
                 <button
                   onClick={placeOrder}
-                  className="px-8 py-3 bg-black text-white rounded-lg hover:opacity-90"
+                  className="px-8 py-3 bg-blue-500 text-white rounded-lg hover:opacity-90"
                 >
                   Pay & Place Order
                 </button>
